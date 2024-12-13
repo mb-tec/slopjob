@@ -7,8 +7,9 @@ COPY cypress.config.js .
 COPY cypress .
 
 ENV CI=1
-RUN npm ci && npx cypress verify && ls && npx cypress run --browser chrome
-
+RUN npm ci
+RUN npx cypress verify
+RUN npx cypress run --browser chrome
 
 
 
