@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build": "docker-compose build",
+    "up": "docker-compose up --abort-on-container-exit --exit-code-from e2e",
+    "effective:config": "circleci config process circle.yml | sed /^#/d"
+  }
+}
