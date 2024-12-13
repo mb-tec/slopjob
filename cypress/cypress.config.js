@@ -1,10 +1,7 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
-    reporter: 'junit',
-    reporterOptions: {
-        mochaFile: 'cypress/results/output.xml',
-    },
+    reporter: 'teamcity',
     fixturesFolder: false,
     e2e: {
         supportFile: false,
